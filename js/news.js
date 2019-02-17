@@ -10,6 +10,7 @@ function appendEvents(events, elementId) {
     const outlet = document.getElementById(elementId);
     const header = document.createElement('span');
     header.innerText = events.summary;
+    header.classList.add('font-bold', 'text-grey', 'text-2xl', 'px-3', 'mt-8', 'mb-8');
     outlet.appendChild(header);
     const template = document.getElementById('evtTemplate');
     const eventHide = /( ?\[.*\]|!$)/g;

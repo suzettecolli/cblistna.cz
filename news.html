@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Landing Page - Start Bootstrap Theme</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+
+  </head>
+  <body class="sans-serif">
+  
+  <div class="bg-grey-lighter">
+      <div class="container mx-auto px- sm:pt-0 md:px-12 lg:px-6">
+        <p id="calendar" class="font-bold text-grey-darkest text-4xl px-3 pt-8 section-heading">
+          Oznámení <small id="today-date" class="text-muted"></small></p>
+  
+        <section class="content-section-a">
+          <div class="container">
+                <div class="pt-8" id="regularEvents"></div>
+                <div class="pt-8" id="irregularEvents"></div>
+                <div class="pt-8" id="otherEvents"></div>
+          </div>
+        </section> 
+
+    </div>
+  </div>
+
+  <template id="evtTemplate">
+    <div class="calEvent pt-2">
+      <div class="evtDateCol">
+        <p class="flex flex-row items-center px-3 text-xl pb-2">
+          <span class="w-6 pr-12 font-thin evtWeekDay"></span>
+          <span class="w-24 text-right font-medium evtDate"></span>
+          <span class="w-12 pl-3 font-medium evtMonth"></span>
+          <span class="w-16 text-right font-thin evtTime"></span>
+          <span class="flex-grow w-24 text-justify pl-8 font-semibold evtTitle"></span>
+        <div class="evtDescriptionCol">
+              <div class="evtTitleDetail">
+                <span class="evtTitle"></span>
+                <span class="evtDetail font-weight-normal text-muted"></span>
+              </div>
+              <div class="evtLinks font-weight-normal"></div>
+        </div>
+      </div>
+       </p>
+    </div>
+  </template>
+
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script src="js/google-access.js"></script>
+    <script src="js/news.js"></script>
+  </body>
+
+</html>
