@@ -18,8 +18,14 @@ function appendEvents(events, elementId) {
       const title = event.summary.replace(eventHide, '');
       const start = eventDate(event.start);
       const date = dateOf(start).split(' ');
-      node.querySelector('.evtDate').textContent = date[0];
-      node.querySelector('.evtMonth').textContent = date[1];
+      if(elementId !== 'regularEvents'){
+        node.querySelector('.evtDate').textContent = date[0];
+        node.querySelector('.evtMonth').textContent = date[1];
+      }
+      else {
+        node.querySelector('.evtDate').classList.remove('w-6');
+        node.querySelector('.evtMonth').classList.remove('w-12', 'pl-3');
+      }
       node.querySelector('.evtTime').textContent = timeOrBlankOf(start);
       node.querySelector('.evtWeekDay').textContent = weekDayOf(start);
       node.querySelector('.evtTitle').textContent = title;
