@@ -1,0 +1,87 @@
+/*Customization for tailwind.css*/
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Added my own color palette.
+ */
+
+/*******************************
+Color palette for cblistna.cz
+*******************************/
+
+.cb_main-color-dark {
+    color: #202729;
+}
+
+.cb_main-color-light {
+    color: #F2ECEC;
+}
+
+.cb_main-color-dark_violet {
+    color: #524340;
+}
+
+.cb_main-color-pink {
+    color: #E08868;
+}
+
+.cb_main-color-blue {
+    color: #8D9291;
+}
+
+
+/*palette to background color*/
+
+.bg-m-dark {
+    background-color: #202729;
+}
+
+.bg-m-light {
+    background-color: #F2ECEC;
+}
+
+.bg-m-violet {
+    background-color: #524340;
+}
+
+.bg-m-pink {
+    background-color: #E08868;
+}
+
+.bg-m-blue {
+    background-color: #8D9291;
+}
+
+
+
+
+
+/*Special margin bottom that is not specifed in tailwind.*/
+.pb-9 {
+        padding-bottom: 9rem;
+    }
+
+.pr-13 {
+        padding-right: 13%;
+}
+
+.pl-40p {
+        padding-left: 40%;
+}
+
+.pr-10p {
+        padding-right:10%;
+}
+
+@media (min-width: 992px) {
+        .lg\:w-60{
+            width: 60%;
+        }
+}
+
+.w-60 {
+        width: 60%;
+}
+
